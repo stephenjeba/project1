@@ -1,0 +1,209 @@
+<cXML version="1.2.020"
+	payloadID="635919822427786133.d655cf64798a413baab63758edb38dad@GEPINTERFACEUAT.gep.com"
+	timestamp="2016-02-25T07:30:42" xml:lang="en-us">
+	<Header>
+		<From>
+			<Credential domain="Gep-Cumulus">
+				<Identity>GEP</Identity>
+			</Credential>
+		</From>
+		<To>
+			<Credential domain="Flipkart">
+				<Identity>Flipkart</Identity>
+			</Credential>
+		</To>
+		<Sender>
+			<Credential domain="Gep-Cumulus">
+				<Identity>GEP</Identity>
+				<SharedSecret>GEP123</SharedSecret>
+			</Credential>
+			<UserAgent>GEP-Suite</UserAgent>
+		</Sender>
+	</Header>
+	<Request deploymentMode="test">
+		<InvoiceDetailRequest>
+			<InvoiceDetailRequestHeader invoiceID="laveenaxyz"
+				purpose="lineLevelCreditMemo" operation="new" invoiceDate="2016-02-25T12:26:58.19"
+				invoiceOrigin="supplier">
+				<InvoiceDetailHeaderIndicator
+					isHeaderInvoice="no" />
+				<InvoiceDetailLineIndicator isTaxInLine="no"
+					isSpecialHandlingInLine="no" isShippingInLine="no"
+					isDiscountInLine="yes" isAccountingInLine="yes" />
+				<InvoicePartner>
+					<Contact role="billTo" addressID="1083">
+						<Name xml:lang="en-us">Flipkart Admin</Name>
+						<PostalAddress>
+							<Street>No.9, Ashford Park View, 80 Feet Road, Kormangala
+								Industrial Area , 3rd Block, Koramangala</Street>
+							<City>Bangalaore</City>
+							<PostalCode>0</PostalCode>
+							<Country isoCountryCode="IN"></Country>
+						</PostalAddress>
+						<Email>Flipkart.Admin@gep.com</Email>
+						<Phone>
+							<TelephoneNumber>
+								<CountryCode isoCountryCode="IN">00</CountryCode>
+								<AreaOrCityCode>00</AreaOrCityCode>
+								<Number>91 (22) 6137 2100</Number>
+							</TelephoneNumber>
+						</Phone>
+						<Fax>
+							<TelephoneNumber>
+								<CountryCode isoCountryCode=""></CountryCode>
+								<AreaOrCityCode></AreaOrCityCode>
+								<Number>91 (22) 6137 2121</Number>
+							</TelephoneNumber>
+						</Fax>
+					</Contact>
+				</InvoicePartner>
+				<InvoicePartner>
+					<Contact role="remitTo" addressID="LC-2016.036212">
+						<Name xml:lang="en-us">test 1 last name</Name>
+						<PostalAddress>
+							<Street>test</Street>
+							<City>Mumbai</City>
+							<State>AK</State>
+							<PostalCode>456789</PostalCode>
+							<Country isoCountryCode="US">United States</Country>
+						</PostalAddress>
+						<Email>pchondadagar@gep.com</Email>
+						<Phone>
+							<TelephoneNumber>
+								<CountryCode isoCountryCode="US">1</CountryCode>
+								<AreaOrCityCode>00</AreaOrCityCode>
+								<Number>000</Number>
+							</TelephoneNumber>
+						</Phone>
+					</Contact>
+				</InvoicePartner>
+				<InvoiceIDInfo invoiceID="laveena12345" invoiceDate="2016-02-25T00:00:00" />
+				<PaymentTerm payInNumberOfDays="0" />
+				<Extrinsic name="HeaderExtrinsic">
+					<HeaderExtrinsic>
+						<InvoiceName>Credit Memo1 for Invoice1 for Order1 for
+							Geptest2laveena25022016</InvoiceName>
+						<BuyerUserID>CC-2015.000009</BuyerUserID>
+						<SupplierID>101757</SupplierID>
+						<OrderTotal>100.00</OrderTotal>
+						<OrderDate>2016-02-25T12:17:14.663</OrderDate>
+						<InvoiceERPNumber>CM-02:16-00028</InvoiceERPNumber>
+						<InvoiceReceiptDate>2016-02-25T12:27:48.777</InvoiceReceiptDate>
+						<PaymentTermCode>10008</PaymentTermCode>
+						<Company>020</Company>
+						<BUCode>010</BUCode>
+					</HeaderExtrinsic>
+				</Extrinsic>
+			</InvoiceDetailRequestHeader>
+			<InvoiceDetailOrder>
+				<InvoiceDetailOrderInfo>
+					<OrderReference orderID="PO-000178" />
+					<SupplierOrderInfo orderID="PO-000178" />
+				</InvoiceDetailOrderInfo>
+				<InvoiceDetailItem invoiceLineNumber="1" quantity="10.00">
+					<UnitOfMeasure>EA</UnitOfMeasure>
+					<UnitPrice>
+						<Money currency="USD">1.00</Money>
+					</UnitPrice>
+					<InvoiceDetailItemReference lineNumber="1">
+						<ItemID>
+							<SupplierPartID>1</SupplierPartID>
+						</ItemID>
+						<Description xml:lang="en-us">1</Description>
+					</InvoiceDetailItemReference>
+					<SubtotalAmount>
+						<Money currency="USD">-10.00</Money>
+					</SubtotalAmount>
+					<Tax>
+						<Money currency="USD">0.00</Money>
+						<Description xml:lang="en-us">Total Tax</Description>
+					</Tax>
+					<InvoiceDetailLineSpecialHandling>
+						<Money currency="USD">0.00</Money>
+					</InvoiceDetailLineSpecialHandling>
+					<InvoiceDetailLineShipping>
+						<InvoiceDetailShipping>
+							<Contact role="shipTo" addressID="3203">
+								<Name xml:lang="en-us">3PL WH Bandra-Mumbai</Name>
+								<PostalAddress>
+									<DeliverTo>Flipkart Admin</DeliverTo>
+									<Street>35, New Shopping Center, GOVT Colony, Behind Collectors
+										Office, Bandra (E), Mumbai, Maharastra 400051</Street>
+									<City>Bandra</City>
+									<PostalCode>0</PostalCode>
+									<Country isoCountryCode="IN"></Country>
+								</PostalAddress>
+								<Email>Flipkart.Admin@gep.com</Email>
+								<Phone>
+									<TelephoneNumber>
+										<CountryCode isoCountryCode="IN">00</CountryCode>
+										<AreaOrCityCode>00</AreaOrCityCode>
+										<Number>91 (22) 6137 2100</Number>
+									</TelephoneNumber>
+								</Phone>
+								<Fax>
+									<TelephoneNumber>
+										<CountryCode isoCountryCode=""></CountryCode>
+										<AreaOrCityCode></AreaOrCityCode>
+										<Number>91 (22) 6137 2121</Number>
+									</TelephoneNumber>
+								</Fax>
+							</Contact>
+						</InvoiceDetailShipping>
+						<Money currency="USD">0.00</Money>
+					</InvoiceDetailLineShipping>
+					<GrossAmount>
+						<Money currency="USD">-10.00</Money>
+					</GrossAmount>
+					<NetAmount>
+						<Money currency="USD">-10.00</Money>
+					</NetAmount>
+					<Distribution>
+						<Accounting name="DistributionCharge">
+							<AccountingSegment id="020">
+								<Name xml:lang="en-us">BusinessUnit</Name>
+								<Description xml:lang="en-us">Flipkart India Private Limited
+								</Description>
+							</AccountingSegment>
+							<AccountingSegment id="1010">
+								<Name xml:lang="en-us">Cost Center</Name>
+								<Description xml:lang="en-us">CP - Discovery</Description>
+							</AccountingSegment>
+							<AccountingSegment id="113240">
+								<Name xml:lang="en-us">GL Code</Name>
+								<Description xml:lang="en-us">113240-113240 CWIP Lease Hold
+									Improvements</Description>
+							</AccountingSegment>
+						</Accounting>
+						<Charge>
+							<Money currency="USD">0.00</Money>
+						</Charge>
+					</Distribution>
+				</InvoiceDetailItem>
+			</InvoiceDetailOrder>
+			<InvoiceDetailSummary>
+				<SubtotalAmount>
+					<Money currency="USD">-10.00</Money>
+				</SubtotalAmount>
+				<Tax>
+					<Money currency="USD">0.00</Money>
+				</Tax>
+				<SpecialHandlingAmount>
+					<Money currency="USD">0.00</Money>
+				</SpecialHandlingAmount>
+				<ShippingAmount>
+					<Money currency="USD">0.00</Money>
+				</ShippingAmount>
+				<GrossAmount>
+					<Money currency="USD">-10.00</Money>
+				</GrossAmount>
+				<NetAmount>
+					<Money currency="USD">-10.00</Money>
+				</NetAmount>
+				<DueAmount>
+					<Money currency="USD">-10.00</Money>
+				</DueAmount>
+			</InvoiceDetailSummary>
+		</InvoiceDetailRequest>
+	</Request>
+</cXML>

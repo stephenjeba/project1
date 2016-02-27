@@ -1,0 +1,266 @@
+<cXML version="1.2.020"
+	payloadID="635919837499449923.8cb49e66d53b4e33b3734d848287fdd8@GEPINTERFACEUAT.gep.com"
+	timestamp="2016-02-25T07:55:49" xml:lang="en-us">
+	<Header>
+		<From>
+			<Credential domain="Gep-Cumulus">
+				<Identity>GEP</Identity>
+			</Credential>
+		</From>
+		<To>
+			<Credential domain="Flipkart">
+				<Identity>Flipkart</Identity>
+			</Credential>
+		</To>
+		<Sender>
+			<Credential domain="Gep-Cumulus">
+				<Identity>GEP</Identity>
+				<SharedSecret>GEP123</SharedSecret>
+			</Credential>
+			<UserAgent>GEP-Suite</UserAgent>
+		</Sender>
+	</Header>
+	<Request deploymentMode="test">
+		<InvoiceDetailRequest>
+			<InvoiceDetailRequestHeader invoiceID="TAH128CN"
+				purpose="lineLevelCreditMemo" operation="new" invoiceDate="2016-02-25T12:39:06.05"
+				invoiceOrigin="buyer">
+				<InvoiceDetailHeaderIndicator
+					isHeaderInvoice="no" />
+				<InvoiceDetailLineIndicator isTaxInLine="yes"
+					isSpecialHandlingInLine="no" isShippingInLine="no"
+					isDiscountInLine="yes" isAccountingInLine="yes" />
+				<InvoicePartner>
+					<Contact role="billTo" addressID="1070">
+						<Name xml:lang="en-us">Cinchana H Naik</Name>
+						<PostalAddress>
+							<Street>Ground Floor, Vaishnavi Summit, 7th Main, 80 Feet Road,
+								3rd Block, Koramangala Industrial Layout</Street>
+							<City>Bangalaore</City>
+							<PostalCode>0</PostalCode>
+							<Country isoCountryCode="IN"></Country>
+						</PostalAddress>
+						<Email>cinchana.naik@flipkart.com</Email>
+						<Phone>
+							<TelephoneNumber>
+								<CountryCode isoCountryCode="IN">00</CountryCode>
+								<AreaOrCityCode>00</AreaOrCityCode>
+								<Number>000</Number>
+							</TelephoneNumber>
+						</Phone>
+					</Contact>
+				</InvoicePartner>
+				<InvoicePartner>
+					<Contact role="remitTo" addressID="11538">
+						<Name xml:lang="en-us">test 1 last name</Name>
+						<PostalAddress>
+							<Street>No.25, 16th main</Street>
+							<Street>4th Block Koramangala</Street>
+							<City>BAN</City>
+							<PostalCode>560034</PostalCode>
+							<Country isoCountryCode="IN">India</Country>
+						</PostalAddress>
+						<Email>pchondadagar@gep.com</Email>
+						<Phone>
+							<TelephoneNumber>
+								<CountryCode isoCountryCode="IN">00</CountryCode>
+								<AreaOrCityCode>00</AreaOrCityCode>
+								<Number>000</Number>
+							</TelephoneNumber>
+						</Phone>
+					</Contact>
+				</InvoicePartner>
+				<InvoiceIDInfo invoiceID="TAH128" invoiceDate="2016-02-25T00:00:00" />
+				<PaymentTerm payInNumberOfDays="0" />
+				<Extrinsic name="HeaderExtrinsic">
+					<HeaderExtrinsic>
+						<InvoiceName>Credit Memo4</InvoiceName>
+						<BuyerUserID>CC-2015.003285</BuyerUserID>
+						<SupplierID>101757</SupplierID>
+						<OrderTotal>165000.00</OrderTotal>
+						<OrderDate>2016-02-24T13:14:55.587</OrderDate>
+						<InvoiceERPNumber>CM-02:16-00030</InvoiceERPNumber>
+						<InvoiceReceiptDate>2016-02-25T12:39:06.05</InvoiceReceiptDate>
+						<PaymentTermCode>10008</PaymentTermCode>
+						<Company>040</Company>
+						<BUCode>040</BUCode>
+					</HeaderExtrinsic>
+				</Extrinsic>
+			</InvoiceDetailRequestHeader>
+			<InvoiceDetailOrder>
+				<InvoiceDetailOrderInfo>
+					<OrderReference orderID="PO-000169" />
+					<SupplierOrderInfo orderID="PO-000169" />
+				</InvoiceDetailOrderInfo>
+				<InvoiceDetailItem invoiceLineNumber="1" quantity="1.00">
+					<UnitOfMeasure>EA</UnitOfMeasure>
+					<UnitPrice>
+						<Money currency="INR">5000.00</Money>
+					</UnitPrice>
+					<InvoiceDetailItemReference lineNumber="1">
+						<ItemID>
+							<SupplierPartID></SupplierPartID>
+						</ItemID>
+						<Description xml:lang="en-us">laptop</Description>
+					</InvoiceDetailItemReference>
+					<SubtotalAmount>
+						<Money currency="INR">-5000.00</Money>
+					</SubtotalAmount>
+					<Tax>
+						<Money currency="INR">0.00</Money>
+						<Description xml:lang="en-us">Total Tax</Description>
+					</Tax>
+					<InvoiceDetailLineSpecialHandling>
+						<Money currency="INR">0.00</Money>
+					</InvoiceDetailLineSpecialHandling>
+					<InvoiceDetailLineShipping>
+						<InvoiceDetailShipping>
+							<Contact role="shipTo" addressID="1070">
+								<Name xml:lang="en-us">OFF BLR Vaishnavi</Name>
+								<PostalAddress>
+									<DeliverTo>Cinchana H Naik</DeliverTo>
+									<Street>#:6/B, Situated at 7TH Main, 80 Feet Road, Koramangala,
+										Banglaore - 560034</Street>
+									<City>Bangalore</City>
+									<PostalCode>0</PostalCode>
+									<Country isoCountryCode="IN"></Country>
+								</PostalAddress>
+								<Email>cinchana.naik@flipkart.com</Email>
+								<Phone>
+									<TelephoneNumber>
+										<CountryCode isoCountryCode="IN">00</CountryCode>
+										<AreaOrCityCode>00</AreaOrCityCode>
+										<Number>000</Number>
+									</TelephoneNumber>
+								</Phone>
+							</Contact>
+						</InvoiceDetailShipping>
+						<Money currency="INR">0.00</Money>
+					</InvoiceDetailLineShipping>
+					<GrossAmount>
+						<Money currency="INR">-5000.00</Money>
+					</GrossAmount>
+					<NetAmount>
+						<Money currency="INR">-5000.00</Money>
+					</NetAmount>
+					<Distribution>
+						<Accounting name="DistributionCharge">
+							<AccountingSegment id="040">
+								<Name xml:lang="en-us">BusinessUnit</Name>
+								<Description xml:lang="en-us">Flipkart Internet Private
+									Limited</Description>
+							</AccountingSegment>
+							<AccountingSegment id="1010">
+								<Name xml:lang="en-us">Cost Center</Name>
+								<Description xml:lang="en-us">CP - Discovery</Description>
+							</AccountingSegment>
+							<AccountingSegment id="113240">
+								<Name xml:lang="en-us">GL Code</Name>
+								<Description xml:lang="en-us">113240-113240 CWIP Lease Hold
+									Improvements</Description>
+							</AccountingSegment>
+						</Accounting>
+						<Charge>
+							<Money currency="INR">-5000.00</Money>
+						</Charge>
+					</Distribution>
+				</InvoiceDetailItem>
+				<InvoiceDetailItem invoiceLineNumber="2" quantity="0.00">
+					<UnitOfMeasure>EA</UnitOfMeasure>
+					<UnitPrice>
+						<Money currency="INR">0.00</Money>
+					</UnitPrice>
+					<InvoiceDetailItemReference lineNumber="1">
+						<ItemID>
+							<SupplierPartID></SupplierPartID>
+						</ItemID>
+						<Description xml:lang="en-us">laptop</Description>
+					</InvoiceDetailItemReference>
+					<SubtotalAmount>
+						<Money currency="INR">0.00</Money>
+					</SubtotalAmount>
+					<Tax>
+						<Money currency="INR">-700.00</Money>
+					</Tax>
+					<InvoiceDetailLineSpecialHandling>
+						<Money currency="INR">0.00</Money>
+					</InvoiceDetailLineSpecialHandling>
+					<InvoiceDetailLineShipping>
+						<InvoiceDetailShipping>
+							<Contact role="shipTo" addressID="1070">
+								<Name xml:lang="en-us">OFF BLR Vaishnavi</Name>
+								<PostalAddress>
+									<DeliverTo>Cinchana H Naik</DeliverTo>
+									<Street>#:6/B, Situated at 7TH Main, 80 Feet Road, Koramangala,
+										Banglaore - 560034</Street>
+									<City>Bangalore</City>
+									<PostalCode>0</PostalCode>
+									<Country isoCountryCode="IN"></Country>
+								</PostalAddress>
+								<Email>cinchana.naik@flipkart.com</Email>
+								<Phone>
+									<TelephoneNumber>
+										<CountryCode isoCountryCode="IN">00</CountryCode>
+										<AreaOrCityCode>00</AreaOrCityCode>
+										<Number>000</Number>
+									</TelephoneNumber>
+								</Phone>
+							</Contact>
+						</InvoiceDetailShipping>
+						<Money currency="INR">0.00</Money>
+					</InvoiceDetailLineShipping>
+					<GrossAmount>
+						<Money currency="INR">-700.00</Money>
+					</GrossAmount>
+					<NetAmount>
+						<Money currency="INR">-700.00</Money>
+					</NetAmount>
+					<Distribution>
+						<Accounting name="DistributionCharge">
+							<AccountingSegment id="040">
+								<Name xml:lang="en-us">BusinessUnit</Name>
+								<Description xml:lang="en-us">Flipkart Internet Private
+									Limited</Description>
+							</AccountingSegment>
+							<AccountingSegment id="1010">
+								<Name xml:lang="en-us">Cost Center</Name>
+								<Description xml:lang="en-us">CP - Discovery</Description>
+							</AccountingSegment>
+							<AccountingSegment id="113240">
+								<Name xml:lang="en-us">GL Code</Name>
+								<Description xml:lang="en-us">113240-113240 CWIP Lease Hold
+									Improvements</Description>
+							</AccountingSegment>
+						</Accounting>
+						<Charge>
+							<Money currency="INR">-700.00</Money>
+						</Charge>
+					</Distribution>
+				</InvoiceDetailItem>
+			</InvoiceDetailOrder>
+			<InvoiceDetailSummary>
+				<SubtotalAmount>
+					<Money currency="INR">-5000.00</Money>
+				</SubtotalAmount>
+				<Tax>
+					<Money currency="INR">-700.00</Money>
+				</Tax>
+				<SpecialHandlingAmount>
+					<Money currency="INR">0.00</Money>
+				</SpecialHandlingAmount>
+				<ShippingAmount>
+					<Money currency="INR">0.00</Money>
+				</ShippingAmount>
+				<GrossAmount>
+					<Money currency="INR">-5700.00</Money>
+				</GrossAmount>
+				<NetAmount>
+					<Money currency="INR">-5700.00</Money>
+				</NetAmount>
+				<DueAmount>
+					<Money currency="INR">-5700.00</Money>
+				</DueAmount>
+			</InvoiceDetailSummary>
+		</InvoiceDetailRequest>
+	</Request>
+</cXML>
